@@ -21,8 +21,7 @@ const { Content } = await post.render();
   <HeaderTop client:load/>
     <Header title="AstroBuild.tips" />
     <Content />
-    <Social />
-    <Footer >
-    </Footer>
+    <Social client:only />
+    <Footer />
 </Base>
 

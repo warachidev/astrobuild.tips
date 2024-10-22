@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 export async function get(context) {
   const posts = await getCollection("tips");
-  return rss({
+  rss({
     title: "AstroBuild.tips",
     description: "My firts Page",
     site: context.site,
